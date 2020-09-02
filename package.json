@@ -31,7 +31,7 @@
   "homepage": "https://github.com/jeromemacias/fastify-xray#readme",
   "devDependencies": {
     "@types/node": "^11.9.3",
-    "fastify": "^2.0.0",
+    "fastify": "^3.3.0",
     "pre-commit": "^1.2.2",
     "sinon": "~9.0.2",
     "snazzy": "^8.0.0",
@@ -41,6 +41,6 @@
   },
   "dependencies": {
     "aws-xray-sdk-core": "^3.1.0",
-    "fastify-plugin": "^1.6.1"
+    "fastify-plugin": "^2.3.3"
   }
 }

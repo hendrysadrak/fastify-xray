@@ -1,5 +1,4 @@
-import fastify = require("fastify");
-import http2 = require("http2");
+import fastify from "fastify"; 
 import xray = require("../");
 import AWSXRay = require("aws-xray-sdk-core");
 
@@ -34,11 +33,7 @@ appWithImplicitHttp
     });
   });
 
-const appWithHttp2: fastify.FastifyInstance<
-  http2.Http2Server,
-  http2.Http2ServerRequest,
-  http2.Http2ServerResponse
-> = fastify();
+const appWithHttp2 = fastify({ http2: true });
 
 appWithHttp2.register(xray).after(() => {
   appWithHttp2.get("/", (request) => {
