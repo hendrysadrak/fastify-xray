@@ -86,8 +86,8 @@ function plugin (fastify, options, next) {
       segment[cause] = true
     }
 
-    if (segment.http && reply.res) {
-      segment.http.close(reply.res)
+    if (segment.http && reply.raw) {
+      segment.http.close(reply.raw)
     }
     segment.close()
 
