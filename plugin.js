@@ -11,7 +11,7 @@ function plugin (fastify, options, next) {
 
   function fastifyXrayOnRequest (request, reply, done) {
     const req = request.raw
-    const res = reply.res
+    const res = reply.raw
     res.req = req
     res.header = {}
 
