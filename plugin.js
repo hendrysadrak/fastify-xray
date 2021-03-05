@@ -77,7 +77,7 @@ function plugin (fastify, options, next) {
       return done()
     }
 
-    const statusCode = reply.statusCode || reply.res.statusCode
+    const statusCode = reply.statusCode || reply.raw.statusCode
 
     if (statusCode === 429) {
       segment.addThrottleFlag()

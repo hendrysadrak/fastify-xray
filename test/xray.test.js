@@ -41,8 +41,8 @@ function register (AWSXRay, giveInstanceAs) {
     request.raw.on = TestUtils.onEvent
     request.raw.headers = { host: hostName }
 
-    reply.res.emitter = new TestUtils.TestEmitter()
-    reply.res.on = TestUtils.onEvent
+    reply.raw.emitter = new TestUtils.TestEmitter()
+    reply.raw.on = TestUtils.onEvent
 
     done()
   })
