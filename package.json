@@ -19,6 +19,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/jeromemacias/fastify-xray.git"
   },
+  "files": [
+    "plugin.js",
+    "plugin.d.ts"
+  ],
   "keywords": [
     "fastify",
     "cookie"
